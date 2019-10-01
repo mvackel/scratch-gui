@@ -1,6 +1,12 @@
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
 
+import scratchjrIconURL from './scratchjr/scratchjr.png';
+import scratchjrInsetIconURL from './scratchjr/scratchjr-small.svg';
+
+import vinciIconURL from './vinci/vinci.png';
+import vinciInsetIconURL from './vinci/vinci-small.svg';
+
 import musicIconURL from './music/music.png';
 import musicInsetIconURL from './music/music-small.svg';
 
@@ -47,6 +53,36 @@ import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
 export default [
+    {
+        name: 'Vinci',
+        extensionId: 'vinci',
+        collaborator: 'MAckel',
+        iconURL: vinciIconURL, 
+        insetIconURL: vinciInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Vinci - Programando robots"
+                description="Vinci é um robô programável por um painel ou pelo Scratch"
+                id="gui.extension.vinci.description"
+            />
+        ),
+        featured: true
+    },
+    {
+        name: 'Scratch Jr',
+        extensionId: 'scratchjr',
+        collaborator: 'AnaJu',
+        iconURL: scratchjrIconURL,
+        insetIconURL: scratchjrInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Play with juniors"
+                description="Description for the 'Scratch Jr' extension"
+                id="gui.extension.scratchjr.description"
+            />
+        ),
+        featured: true
+    },
     {
         name: (
             <FormattedMessage
